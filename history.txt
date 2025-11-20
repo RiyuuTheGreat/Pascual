@@ -1,0 +1,65 @@
+    1  ls
+    2  cd documents
+    3  cd document
+    4  cd ..
+    5  /cd ..
+    6  mkdir Pascual
+    7  ls
+    8  cd use
+    9  cd ..
+   10  mdkir PASCUAL
+   11  cd Major subject
+   12  cd PASCUAL
+   13  git branch -M main
+   14  cd history
+   15  cd create history create
+   16  cd Benedict
+   17  mkdir Pascual
+   18  mkdir PASCUAL
+   19  cd PASCUAL
+   20  text.touch
+   21  cd ..
+   22  cd user
+   23  ls
+   24  cd User
+   25  cd Benedict
+   26  mkdir Pascual
+   27  cd Pascual
+   28  touch readme.md
+   29  start readme.md
+   30  git init
+   31  git add .
+   32  git status
+   33  git add .
+   34  git commit -m "first commit"
+   35  git config --global user.name "Pascual"
+   36  git config --global user.email "johnbenedictpascual14@gmail.com"
+   37  git commit -m "first commit"
+   38  git push
+   39  git remote add origin https://github.com/RiyuuTheGreat/Pascual.git
+   40  git push -u origin main
+   41  git push -u main
+   42  git remote add origin https://github.com/RiyuuTheGreat/Pascual.git
+   43  cd .git
+   44  ls
+   45  start config
+   46  cd ..
+   47  git remote add origin https://github.com/RiyuuTheGreat/Pascual.git
+   48
+   49  git push -u origin main
+   50  git push -u origin main
+   51  git push -u origin main
+   52  git branch -M main
+   53  git push -u origin main
+   54  git push -u origin main
+   55  git push -u origin main
+   56  git push -u origin main
+   57  start readme.md
+   58  git add .
+   59  git commit -m "second commit"
+   60  git push
+   61  git clone https://github.com/RiyuuTheGreat/Pascual.git
+   62  cd ..
+   63  git clone https://github.com/RiyuuTheGreat/Pascual.git
+   64  cd Pascual
+   65  history
