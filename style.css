@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background: url('/img/back.gif') center/cover fixed no-repeat;
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+}
+/* ===== BACK BUTTON ===== */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.back-button a {
+  text-decoration: none;
+  color: #00FFC8;
+  background: #121212;
+  border: 2px solid #00FFC8;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #00FFC8, 0 0 20px #FF6EC7;
+  transition: all 0.3s ease;
+  font-size: 0.7rem;
+}
+
+.back-button a:hover {
+  background: #FF6EC7;
+  color: #fff;
+  box-shadow: 0 0 15px #FF6EC7, 0 0 30px #00FFC8;
+}
+
+/* ===== HEADER ===== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(18, 18, 18, 0.95);
+  border-bottom: 3px solid #00FFC8;
+  box-shadow: 0 0 10px #00FFC8;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1rem;
+  color: #FF6EC7;
+  text-shadow: 0 0 10px #FF6EC7, 0 0 20px #00FFC8;
+}
+
+.logo span {
+  color: #00FFC8;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #FF6EC7;
+  text-shadow: 0 0 10px #FF6EC7;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  background: rgba(18, 18, 18, 0.9);
+  border: 3px solid #00FFC8;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00FFC8, 0 0 25px #FF6EC7;
+  width: 90%;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  animation: fadeIn 0.6s ease;
+}
+
+/* ===== RESUME HEADER ===== */
+.resume-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #00FFC8;
+  box-shadow: 0 0 20px #00FFC8, 0 0 40px #FF6EC7;
+  margin-bottom: 1rem;
+}
+
+.resume-header h1 {
+  font-size: 1rem;
+  color: #FF6EC7;
+  text-shadow: 0 0 10px #FF6EC7, 0 0 20px #00FFC8;
+}
+
+.contact {
+  font-size: 0.6rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+
+/* ===== SECTION STYLING ===== */
+section {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+section h2 {
+  color: #00FFC8;
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 0 10px #00FFC8, 0 0 15px #FF6EC7;
+}
+
+section p,
+section li {
+  font-size: 0.6rem;
+  color: #eee;
+  line-height: 1.8;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+/* ===== SKILLS ===== */
+.skills li {
+  background: rgba(255, 110, 199, 0.1);
+  border: 1px solid #FF6EC7;
+  padding: 0.4rem;
+  margin-bottom: 0.4rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #FF6EC7;
+}
+
+/* ===== FOOTER ===== */
+.resume-footer {
+  text-align: center;
+  border-top: 2px solid #00FFC8;
+  padding-top: 1.5rem;
+  font-size: 0.6rem;
+  color: #ccc;
+  text-shadow: 0 0 5px #00FFC8;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .container {
+    width: 95%;
+    padding: 1.2rem;
+  }
+}
